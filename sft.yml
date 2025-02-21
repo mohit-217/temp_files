@@ -7,7 +7,7 @@ trust_remote_code: true
 chat_template: chatml
 
 # Training settings
-micro_batch_size: 8
+micro_batch_size: 2
 num_epochs: 1
 learning_rate: 0.0002
 gradient_accumulation_steps: 32
@@ -67,7 +67,7 @@ s2_attention:
 warmup_steps: 10
 
 debug:
-deepspeed: deepspeed_configs/zero3_bf16_cpuoffload_all.json
+deepspeed: deepspeed_configs/zero3_bf16_cpuoffload_params.json
 weight_decay: 0.0
 fsdp:
 fsdp_config:
