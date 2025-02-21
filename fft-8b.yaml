@@ -45,7 +45,7 @@ resume_from_checkpoint:
 logging_steps: 1
 xformers_attention:
 flash_attention: true
-deepspeed: deepspeed_configs/zero1.json
+#deepspeed: deepspeed_configs/zero1.json
 warmup_steps: 100
 evals_per_epoch: 2
 eval_table_size:
