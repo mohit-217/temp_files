@@ -7,7 +7,7 @@ load_in_4bit: false
 strict: false
 
 datasets:
-  - path: cognitivecomputations/dolphin-r1
+  #- path: cognitivecomputations/dolphin-r1
     type: chat_template
     ds_type: json
     field_messages: messages
