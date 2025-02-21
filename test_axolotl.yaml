@@ -18,7 +18,7 @@ fsdp_config: null
 gradient_accumulation_steps: 2
 gradient_checkpointing: true
 group_by_length: false
-hub_model_id: mohit9999/all_news_finance_sm_1h2023_custom_model_2
+hub_model_id: mohit9999/all_news_finance_sm_1h2023_custom_model_3
 learning_rate: 2e-5
 load_in_4bit: true
 load_in_8bit: false
@@ -38,13 +38,13 @@ micro_batch_size: 1
 model_type: LlamaForCausalLM
 num_epochs: 1
 optimizer: paged_adamw_8bit
-output_dir: ./outputs/lora-out-2
+output_dir: ./outputs/lora-out-3
 pad_to_sequence_len: true
 resume_from_checkpoint: null
 sample_packing: true
 saves_per_epoch: 1
 sdp_attention: true
-sequence_len: 1024
+sequence_len: 2048
 special_tokens: null
 strict: false
 tf32: false
