@@ -9,7 +9,7 @@ strict: false
 datasets:
   - path: cognitivecomputations/dolphin-r1
     type: chat_template
-	  field_messages: messages
+    field_messages: messages
 dataset_prepared_path: last_run_prepared
 val_set_size: 0.05
 output_dir: ./outputs/out
