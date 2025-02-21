@@ -11,14 +11,14 @@ datasets:
     type: chat_template
     chat_template: chatml
     field_messages: messages
-    message_property_mappings:
-      role: role
-      content: content
-    roles:
-      user:
-        - user
-      assistant:
-        - assistant
+    # message_property_mappings:
+    #   role: role
+    #   content: content
+    # roles:
+    #   user:
+    #     - user
+    #   assistant:
+    #     - assistant
     data_files:
 #      - dolphin-r1-nonreasoning.jsonl
       - dolphin-r1-reasoning-deepseek.jsonl
