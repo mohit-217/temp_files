@@ -1,7 +1,7 @@
 base_model: Qwen/Qwen2.5-32B
 trust_remote_code: true
 
-gpu_memory_limit: 70GiB
+#gpu_memory_limit: 70GiB
 
 # Model settings
 chat_template: chatml
