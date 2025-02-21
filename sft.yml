@@ -1,6 +1,8 @@
 base_model: Qwen/Qwen2.5-32B
 trust_remote_code: true
-
+load_in_8bit: false
+load_in_4bit: false
+strict: false
 #gpu_memory_limit: 70GiB
 
 # Model settings
@@ -67,7 +69,7 @@ s2_attention:
 warmup_steps: 10
 
 debug:
-deepspeed: deepspeed_configs/zero3.json
+deepspeed: deepspeed_configs/zero3_bf16_cpuoffload_params.json
 weight_decay: 0.0
 fsdp:
 fsdp_config:
