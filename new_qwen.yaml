@@ -1,4 +1,4 @@
-base_model: Qwen/Qwen2.5-32B
+base_model: Qwen/Qwen2.5-3B
 # Automatically upload checkpoint and final model to HF
 # hub_model_id: username/custom_model_name
 
@@ -28,7 +28,7 @@ dataset_prepared_path: last_run_prepared
 val_set_size: 0.05
 output_dir: ./outputs/out
 
-sequence_len: 2048
+sequence_len: 16384
 sample_packing: true
 pad_to_sequence_len: true
 
