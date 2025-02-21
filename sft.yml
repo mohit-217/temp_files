@@ -67,7 +67,7 @@ s2_attention:
 warmup_steps: 10
 
 debug:
-deepspeed: deepspeed_configs/zero3_bf16_cpuoffload_params.json
+deepspeed: deepspeed_configs/zero3.json
 weight_decay: 0.0
 fsdp:
 fsdp_config:
