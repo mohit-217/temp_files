@@ -50,7 +50,7 @@ strict: false
 tf32: false
 tokenizer_type: LlamaTokenizer
 train_on_inputs: false
-val_set_size: 0.05
+val_set_size: 0.1
 wandb_entity: null
 wandb_log_model: null
 wandb_name: null
