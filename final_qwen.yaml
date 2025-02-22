@@ -1,8 +1,8 @@
 base_model: Qwen/Qwen2.5-32B
 # Automatically upload checkpoint and final model to HF
 # hub_model_id: username/custom_model_name
-model_type: AutoModelForCausalLM
-tokenizer_type: AutoTokenizer
+# model_type: AutoModelForCausalLM
+# tokenizer_type: AutoTokenizer
 load_in_8bit: false
 load_in_4bit: false
 strict: false
@@ -59,14 +59,14 @@ early_stopping_patience:
 resume_from_checkpoint:
 logging_steps: 1
 xformers_attention:
-flash_attention: false
+flash_attention: true
 
 warmup_steps: 100
 evals_per_epoch: 2
 eval_table_size:
 saves_per_epoch: 1
 debug:
-deepspeed: deepspeed_configs/zero3_bf16_cpuoffload_params.json
+#deepspeed: deepspeed_configs/zero3_bf16_cpuoffload_params.json
 weight_decay: 0.0
 fsdp:
 fsdp_config:
