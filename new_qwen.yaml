@@ -12,8 +12,8 @@ strict: false
 #     type: alpaca
 datasets:
   - path: cognitivecomputations/dolphin-r1
-    type: chatml
-    #chat_template: chatml
+    type: 
+    chat_template: chatml
     field_messages: messages
     message_property_mappings:
       role: role
