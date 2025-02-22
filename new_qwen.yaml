@@ -10,20 +10,20 @@ strict: false
 # datasets:
 #   - path: tatsu-lab/alpaca
 #     type: alpaca
-chat_template: qwen_25
+#chat_template: qwen_25
+chat_template: chatml
 datasets:
   - path: cognitivecomputations/dolphin-r1
     type: chat_template
-    #chat_template: chatml
     field_messages: messages
     message_property_mappings:
       role: role
       content: content
-    roles:
-      user:
-        - user
-      assistant:
-        - assistant
+    # roles:
+    #   user:
+    #     - user
+    #   assistant:
+    #     - assistant
     data_files:
      #- dolphin-r1-nonreasoning.jsonl
       - dolphin-r1-reasoning-deepseek.jsonl
