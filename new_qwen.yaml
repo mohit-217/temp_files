@@ -25,8 +25,8 @@ datasets:
     #   assistant:
     #     - assistant
     data_files:
-     #- dolphin-r1-nonreasoning.jsonl
-      - dolphin-r1-reasoning-deepseek.jsonl
+      - dolphin-r1-nonreasoning.jsonl
+      #- dolphin-r1-reasoning-deepseek.jsonl
      #- dolphin-r1-reasoning-flash.jsonl
     trust_remote_code: True
 dataset_prepared_path: last_run_prepared
