@@ -7,26 +7,26 @@ load_in_4bit: false
 strict: false
 
 
-datasets:
-  - path: tatsu-lab/alpaca
-    type: alpaca
 # datasets:
-#   - path: cognitivecomputations/dolphin-r1
-#     type: chat_template
-#     chat_template: chatml
-    # field_messages: messages
-    # message_property_mappings:
-    #   role: role
-    #   content: content
-    # roles:
-    #   user:
-    #     - user
-    #   assistant:
-    #     - assistant
-    #data_files:
-#      - dolphin-r1-nonreasoning.jsonl
-      #- dolphin-r1-reasoning-deepseek.jsonl
-#      - dolphin-r1-reasoning-flash.jsonl
+#   - path: tatsu-lab/alpaca
+#     type: alpaca
+datasets:
+  - path: cognitivecomputations/dolphin-r1
+    type: chatml
+    #chat_template: chatml
+    field_messages: messages
+    message_property_mappings:
+      role: role
+      content: content
+    roles:
+      user:
+        - user
+      assistant:
+        - assistant
+    data_files:
+     #- dolphin-r1-nonreasoning.jsonl
+      - dolphin-r1-reasoning-deepseek.jsonl
+     #- dolphin-r1-reasoning-flash.jsonl
     trust_remote_code: True
 dataset_prepared_path: last_run_prepared
 val_set_size: 0.05
