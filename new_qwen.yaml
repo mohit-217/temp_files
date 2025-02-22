@@ -8,7 +8,7 @@ strict: false
 
 datasets:
   - path: cognitivecomputations/dolphin-r1
-    #type: chat_template.default
+    type: chat_template
     chat_template: chatml
     # field_messages: messages
     # message_property_mappings:
