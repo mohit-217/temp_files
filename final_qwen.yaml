@@ -9,7 +9,7 @@ strict: false
 chat_template: qwen_25
 datasets:
   - path: cognitivecomputations/dolphin-r1
-    type: alpaca
+    type: chat_template.default
     #chat_template: chatml
     field_messages: messages
     message_property_mappings:
@@ -42,7 +42,7 @@ wandb_log_model:
 gradient_accumulation_steps: 2
 micro_batch_size: 1
 num_epochs: 1
-optimizer: paged_adamw_8bit
+optimizer: adamw_torch_fused
 lr_scheduler: cosine
 learning_rate: 2e-5
 
