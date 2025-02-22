@@ -15,10 +15,10 @@ chat_template: chatml
 datasets:
   - path: cognitivecomputations/dolphin-r1
     type: chat_template
-    field_messages: messages
-    message_property_mappings:
-      role: role
-      content: content
+    #field_messages: messages
+    # message_property_mappings:
+    #   role: role
+    #   content: content
     # roles:
     #   user:
     #     - user
