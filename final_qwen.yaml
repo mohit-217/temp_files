@@ -6,11 +6,11 @@ tokenizer_type: AutoTokenizer
 load_in_8bit: false
 load_in_4bit: false
 strict: false
-
+chat_template: qwen_25
 datasets:
   - path: cognitivecomputations/dolphin-r1
     type: chat_template.default
-    chat_template: chatml
+    #chat_template: chatml
     field_messages: messages
     message_property_mappings:
       role: role
