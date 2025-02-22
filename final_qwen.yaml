@@ -66,7 +66,7 @@ evals_per_epoch: 2
 eval_table_size:
 saves_per_epoch: 1
 debug:
-deepspeed:
+deepspeed: deepspeed_configs/zero3_bf16_cpuoffload_params.json
 weight_decay: 0.0
 fsdp:
 fsdp_config:
