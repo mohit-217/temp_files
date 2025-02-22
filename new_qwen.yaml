@@ -10,10 +10,11 @@ strict: false
 # datasets:
 #   - path: tatsu-lab/alpaca
 #     type: alpaca
+chat_template: qwen_25
 datasets:
   - path: cognitivecomputations/dolphin-r1
-    type: 
-    chat_template: chatml
+    type: chat_template
+    #chat_template: chatml
     field_messages: messages
     message_property_mappings:
       role: role
