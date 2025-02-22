@@ -30,7 +30,7 @@ val_set_size: 0.05
 output_dir: ./outputs/out
 
 sequence_len: 8192
-sample_packing: true
+sample_packing: false
 pad_to_sequence_len: true
 
 wandb_project:
@@ -53,13 +53,13 @@ fp16:
 tf32: false
 
 gradient_checkpointing: true
-gradient_checkpointing_kwargs:
-  use_reentrant: false
+# gradient_checkpointing_kwargs:
+#   use_reentrant: false
 early_stopping_patience:
 resume_from_checkpoint:
 logging_steps: 1
 xformers_attention:
-flash_attention: true
+flash_attention: false
 
 warmup_steps: 100
 evals_per_epoch: 2
@@ -70,5 +70,5 @@ deepspeed: deepspeed_configs/zero3_bf16_cpuoffload_params.json
 weight_decay: 0.0
 fsdp:
 fsdp_config:
-special_tokens:
+#special_tokens:
   #pad_token: <|end_of_text|>
