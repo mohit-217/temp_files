@@ -71,12 +71,12 @@ eval_table_size:
 saves_per_epoch: 1
 debug:
 weight_decay: 0.0
-fsdp:
-  - full_shard
-  - auto_wrap
-fsdp_config:
-  fsdp_offload_params: true
-  fsdp_state_dict_type: FULL_STATE_DICT
+# fsdp:
+#   - full_shard
+#   - auto_wrap
+# fsdp_config:
+#   fsdp_offload_params: true
+#   fsdp_state_dict_type: FULL_STATE_DICT
   #fsdp_transformer_layer_cls_to_wrap: LlamaDecoderLayer
 # fsdp:
 # fsdp_config:
