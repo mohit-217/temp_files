@@ -29,7 +29,7 @@ datasets:
       #- dolphin-r1-reasoning-deepseek.jsonl
      #- dolphin-r1-reasoning-flash.jsonl
     trust_remote_code: True
-dataset_prepared_path: last_run_prepared
+dataset_prepared_path: /shared/last_run_prepared
 val_set_size: 0.05
 output_dir: ./outputs/out
 
@@ -63,8 +63,8 @@ early_stopping_patience:
 resume_from_checkpoint:
 logging_steps: 1
 xformers_attention:
-flash_attention: true
-deepspeed: deepspeed_configs/zero3_bf16_cpuoffload_params.json
+flash_attention: True
+#deepspeed: deepspeed_configs/zero3_bf16_cpuoffload_params.json
 warmup_steps: 100
 evals_per_epoch: 2
 eval_table_size:
