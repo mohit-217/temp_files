@@ -12,11 +12,12 @@ datasets:
     split: train
     type: chat_template
     data_files:
-      - data/dolphi-r1-nonreasoning.jsonl
-      - data/dolphin-r1-flash-reasoning.jsonl
-      - data/dolphin-r1-deepseek-reasoning.jsonl
-      - data/final_response_synth.jsonl
-      - data/function_calling_synth.jsonl
+      - data/dolphi-r1-nonreasoning_90.jsonl
+      - data/dolphin-r1-flash-reasoning_90.jsonl
+      - data/dolphin-r1-deepseek-reasoning_90.jsonl
+      - data/final_response_synth_90.jsonl
+      - data/function_calling_synth_90.jsonl
+      - data/mix.jsonl
     trust_remote_code: True
 dataset_prepared_path: /shared/last_run_prepared
 val_set_size: 0.05
