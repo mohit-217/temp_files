@@ -1,6 +1,4 @@
 base_model: Qwen/Qwen2.5-3B
-# Automatically upload checkpoint and final model to HF
-#hub_model_id: mohit5tech9999/first_trained_sft
 shuffle_merged_datasets: false
 load_in_8bit: false
 load_in_4bit: false
@@ -12,11 +10,11 @@ datasets:
     split: train
     type: chat_template
     data_files:
-      - data/dolphi-r1-nonreasoning_90.jsonl
-      - data/dolphin-r1-flash-reasoning_90.jsonl
-      - data/dolphin-r1-deepseek-reasoning_90.jsonl
-      - data/final_response_synth_90.jsonl
-      - data/function_calling_synth_90.jsonl
+      #- data/dolphi-r1-nonreasoning_90.jsonl
+      #- data/dolphin-r1-flash-reasoning_90.jsonl
+      #- data/dolphin-r1-deepseek-reasoning_90.jsonl
+      #- data/final_response_synth_90.jsonl
+      #- data/function_calling_synth_90.jsonl
       - data/mix.jsonl
     trust_remote_code: True
 dataset_prepared_path: /shared/last_run_prepared
@@ -63,9 +61,6 @@ debug:
 weight_decay: 0.0
 fsdp:
 fsdp_config:
-# special_tokens:
-#   bos_token: "<|im_start|>"
-#   eos_token: "<|im_end|>"
 special_tokens:
   bos_token: "<|im_start|>"
   eos_token: "<|im_end|>"
