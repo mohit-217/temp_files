@@ -64,5 +64,12 @@ weight_decay: 0.0
 fsdp:
 fsdp_config:
 special_tokens:
-  pad_token: <|end_of_text|>
-   
+  - "<functions>"
+  - "</functions>"
+  - "<function_calls>"
+  - "</function_calls>"
+  - "<function>"
+  - "</function>"
+  - "<think>"
+  - "</think>"
+  
