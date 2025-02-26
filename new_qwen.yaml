@@ -63,16 +63,18 @@ debug:
 weight_decay: 0.0
 fsdp:
 fsdp_config:
+# special_tokens:
+#   bos_token: "<|im_start|>"
+#   eos_token: "<|im_end|>"
 special_tokens:
   bos_token: "<|im_start|>"
   eos_token: "<|im_end|>"
-tokens:
-  - "<functions>"
-  - "</functions>"
-  - "<function_calls>"
-  - "</function_calls>"
-  - "<function>"
-  - "</function>"
-  - "<think>"
-  - "</think>"
-  
+  additional_special_tokens:
+    - "<functions>"
+    - "</functions>"
+    - "<function_calls>"
+    - "</function_calls>"
+    - '<function name="'
+    - "</function>"
+    - "<think>"
+    - "</think>"
