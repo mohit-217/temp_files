@@ -59,7 +59,7 @@ model_init_kwargs:
   resize_token_embeddings_strategy: "mean"
 
 # DeepSpeed config
-deepspeed:
+deepspeed: deepspeed_configs/zero1.json
   zero_optimization:
     stage: 1
     overlap_comm: true
