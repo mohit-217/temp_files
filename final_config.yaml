@@ -80,13 +80,9 @@ deepspeed: deepspeed_configs/zero1.json
 # greater_is_better: false
 # early_stopping_patience: 5
 gradient_checkpointing: true
-gradient_checkpointing_kwargs:
-  use_reentrant: false
-early_stopping_patience:
-resume_from_checkpoint:
+# gradient_checkpointing_kwargs:
+#   use_reentrant: false
 logging_steps: 1
-xformers_attention:
-flash_attention: true
 
 warmup_steps: 100
 evals_per_epoch: 2
