@@ -87,5 +87,5 @@ do_eval: true
 # WandB integration
 wandb:
   enabled: true
-dataset_prepared_path: /shared/last_run_prepared
-output_dir: /shared/outputs/first_sample_training
+dataset_prepared_path: last_run_prepared
+output_dir: outputs/first_sample_training
