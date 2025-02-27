@@ -19,9 +19,9 @@ special_tokens:
 # Core hyperparameters tuned for best accuracy on complex tasks
 # (Empirical evidence from LRBench++ and recent LLM fine-tuning studies suggest that a very low LR is key)
 learning_rate: 8e-6
-micro_batch_size: 32 
-gradient_accumulation_steps: 32
-num_epochs: 6
+micro_batch_size: 1
+gradient_accumulation_steps: 8
+num_epochs: 1
 weight_decay: 0.04
 dropout: 0.03
 warmup_ratio: 0.10
