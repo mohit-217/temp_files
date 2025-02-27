@@ -19,7 +19,7 @@ special_tokens:
 # Core hyperparameters tuned for best accuracy on complex tasks
 # (Empirical evidence from LRBench++ and recent LLM fine-tuning studies suggest that a very low LR is key)
 learning_rate: 8e-6
-micro_batch_size: 4 
+micro_batch_size: 32 
 gradient_accumulation_steps: 32
 num_epochs: 6
 weight_decay: 0.04
@@ -60,14 +60,14 @@ model_init_kwargs:
 
 # DeepSpeed config
 deepspeed: deepspeed_configs/zero1.json
-  zero_optimization:
-    stage: 1
-    overlap_comm: true
-    contiguous_gradients: true
-  gradient_clipping: 1.0
-  bf16:
-    enabled: true
-  steps_per_print: 100
+  # zero_optimization:
+  #   stage: 1
+  #   overlap_comm: true
+  #   contiguous_gradients: true
+  # gradient_clipping: 1.0
+  # bf16:
+  #   enabled: true
+  # steps_per_print: 100
 
 # Evaluation and checkpointing
 save_strategy: "steps"
@@ -88,4 +88,4 @@ do_eval: true
 wandb:
   enabled: true
 dataset_prepared_path: /shared/last_run_prepared
-output_dir: ./outputs/furst_trained_sft
+output_dir: /shared/outputs/first_sample_training
