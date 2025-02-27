@@ -70,20 +70,17 @@ deepspeed: deepspeed_configs/zero1.json
   # steps_per_print: 100
 
 # Evaluation and checkpointing
-save_strategy: "steps"
-save_steps: 500
-eval_strategy: "steps"
-eval_steps: 500
-save_total_limit: 100
-load_best_model_at_end: true
-metric_for_best_model: "eval_loss"
-greater_is_better: false
 gradient_checkpointing: true
-early_stopping_patience: 5
-warmup_steps: 100
-evals_per_epoch: 2
-eval_table_size:
-saves_per_epoch: 1
+#save_strategy: "steps"
+#save_steps: 500
+#eval_strategy: "steps"
+#eval_steps: 500
+#save_total_limit: 100
+#load_best_model_at_end: true
+#metric_for_best_model: "eval_loss"
+#greater_is_better: false
+#early_stopping_patience: 5
+
 # Validation settings
 val_set_size: 0.05
 do_eval: true
